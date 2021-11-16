@@ -5,7 +5,7 @@ function Header() {
     return (
         <header>
             <div className="left">
-                <img src={process.env.PUBLIC_URL + '/images/logo.png'} alt="" />
+                <img src={process.env.PUBLIC_URL + '/images/author.jpeg'} alt="" />
             </div>
             <div className="right">
                 <Link className="header-link" to='/works' exact={+true}>WORKS</Link>

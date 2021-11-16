@@ -1,71 +1,61 @@
 import React from 'react'
 import Card from './Card'
 
-const medium = [
+const projects = [
     {
-        id: "1",
-        title: "ZUNI",
+        id: "1", title: "ZUNI", imgsrc: "/images/zuni.jpeg",
         description: "Zillion Utility purpose Neural authentication Interface: ZUNI (Hackathon project)",
-        imgsrc: "/images/zuni.jpeg",
         github: "https://github.com/sheikhazhanmohammed/ZUNI",
         deploy: "https://zuni.netlify.app/"
     },
     {
-        id: "2",
-        title: "Taxtds",
+        id: "2", title: "Taxtds", imgsrc: "/images/taxtds.jpeg",
         description: "Taxtds: Local business directory website for all your finance and tax needs",
-        imgsrc: "/images/taxtds.jpeg",
         deploy: "https://taxtds.herokuapp.com/",
     },
     {
-        id: "3",
-        title: "CovidMe",
+        id: "3", title: "Cubicle", imgsrc: "/images/cubicle.jpg",
+        description: "Cubicle is a modern blog website with content management system and built on nextjs",
+        github: "https://github.com/m3rashid/cubicle",
+        deploy: "https://cubicle.vercel.app/"
+    },
+    {
+        id: "4", title: "CovidMe", imgsrc: "/images/covid.jpeg",
         description: "Resources to people in need from people trying to help (Hackathon project)",
-        imgsrc: "/images/covid.jpeg",
         github: "https://github.com/m3rashid/covid_project",
         deploy: "https://cov1dme.herokuapp.com/"
     },
     {
-        id: "4",
-        title: "HackJMI ML",
+        id: "5", title: "HackJMI ML", imgsrc: "/images/hack.jpeg",
         description: "Making a more robust face recognition security system (Hackathon project)",
-        imgsrc: "/images/hack.jpeg",
         github: "https://github.com/hashes-jmi/HackJMI2-CheemsGamg",
     },
-]
-
-const mini = [
     {
-        id: "1",
-        title: "Mini Projects",
-        description: "This is a list of some of the mini websites I created",
-        imgsrc: "/images/mini.jpeg",
+        id: "6", title: "Whatsapp Bot", imgsrc: "/images/whatsapp.jpeg",
+        description: "Whatsapp bot with commands to capture links, data and other useful things",
+        github: "https://github.com/m3rashid/whatsapp-bot"
+    },
+    {
+        id: "7", title: "Old Portfolio", imgsrc: "/images/old.jpg",
+        description: "This is my old personal website created with threejs without any other framework",
+        github: "https://github.com/m3rashid/m3rashid.github.io",
+        deploy: "https://m3rashid.github.io/"
+    },
+    {
+        id: "8", title: "Mini Projects", imgsrc: "/images/mini.jpeg",
+        description: "List of some short and fun websites I created while I was learning web development",
         github: "https://github.com/m3rashid/mini_projects",
         deploy: "https://m3rashid.github.io/mini_projects/"
     },
-    // {
-    //     id: "",
-    //     title: "",
-    //     description: "",
-    //     imgsrc: "",
-    //     github: "",
-    //     deploy: ""
-    // },
 ]
 
 function Works() {
     return (
         <main id="works">
             <div className="flex">
-                <h1>Medium Projects</h1>
+                <h1>My Projects</h1>
                 <div className="medium">
-                    {medium.map(entry => {
-                        return <Card key={entry.id} title={entry.title} description={entry.description} imgsrc={entry.imgsrc} github={entry.github ? entry.github : ""} deploy={entry.deploy ? entry.deploy : ""} />
-                    })}
-                </div>
-                <h1>Mini Projects</h1>
-                <div className="mini">
-                    {mini.map(entry => {
+                    {projects.map(entry => {
                         return <Card key={entry.id} title={entry.title} description={entry.description} imgsrc={entry.imgsrc} github={entry.github ? entry.github : ""} deploy={entry.deploy ? entry.deploy : ""} />
                     })}
                 </div>

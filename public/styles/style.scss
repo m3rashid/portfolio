@@ -77,7 +77,12 @@ header{
 
 header{
     height: 100px;
-    .left img{ height: 70px; }
+    .left img{ 
+        height: 70px;
+        border: 2px solid $theme;
+        border-radius: 50%; 
+        margin-top: 6px;
+    }
     .right{
         a{
             color: $theme;
@@ -300,7 +305,7 @@ main#about{
             border-radius: 30%;
         }        
     }
-    .right{
+    .middle{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -317,6 +322,30 @@ main#about{
             .email{
                 font-family: monospace;
                 user-select: text;
+            }
+        }
+    }
+    .right{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+        max-width: 520px;
+        .icons-div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        h1{
+            text-align: center;
+        }
+        div{
+            text-align: center;
+            svg{
+                margin: 8px;
             }
         }
     }

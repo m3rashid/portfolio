@@ -130,6 +130,9 @@ header {
 
 header .left img {
   height: 70px;
+  border: 2px solid #FC1321;
+  border-radius: 50%;
+  margin-top: 6px;
 }
 
 header .right a {
@@ -512,7 +515,7 @@ main#about .left img {
   border-radius: 30%;
 }
 
-main#about .right {
+main#about .middle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -529,26 +532,73 @@ main#about .right {
   text-align: center;
 }
 
-main#about .right div.description {
+main#about .middle div.description {
   font-size: 1.3rem;
   margin-bottom: 20px;
 }
 
-main#about .right div.det {
+main#about .middle div.det {
   padding-top: 6px;
   font-size: 1.3rem;
 }
 
-main#about .right div.det .entry {
+main#about .middle div.det .entry {
   color: #FC1321;
 }
 
-main#about .right div.det .email {
+main#about .middle div.det .email {
   font-family: monospace;
   -webkit-user-select: text;
      -moz-user-select: text;
       -ms-user-select: text;
           user-select: text;
+}
+
+main#about .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 40px;
+  max-width: 520px;
+}
+
+main#about .right .icons-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 20px;
+}
+
+main#about .right h1 {
+  text-align: center;
+}
+
+main#about .right div {
+  text-align: center;
+}
+
+main#about .right div svg {
+  margin: 8px;
 }
 
 @media (max-width: 700px) {

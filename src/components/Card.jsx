@@ -10,13 +10,13 @@ function Card(props) {
                 <p className="project-description">{props.description}</p>
                 <img src={props.imgsrc} alt={props.title + " preview"} />
                 <div className="show">
-                    { 
-                        props.github && 
-                        <a className="github" href={props.github} target="_blank" rel="noreferrer noopener">View on &nbsp;&nbsp;<FontAwesomeIcon icon={faGithub} /></a> 
+                    {
+                        props.github &&
+                        <a className="github" href={props.github} target="_blank" rel="noreferrer noopener">Github &nbsp;&nbsp;<FontAwesomeIcon icon={faGithub} /></a>
                     }
-                    { 
-                        props.deploy && 
-                        <a className="deploy" href={props.deploy} target="_blank" rel="noreferrer noopener">View Deploy</a> }
+                    {
+                        props.deploy &&
+                        <a className="deploy" href={props.deploy} target="_blank" rel="noreferrer noopener">View Deploy</a>}
                 </div>
             </div>
         </div>
