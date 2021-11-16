@@ -1,6 +1,4 @@
 import React from 'react'
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
 function Card(props) {
     return (
@@ -12,7 +10,7 @@ function Card(props) {
                 <div className="show">
                     {
                         props.github &&
-                        <a className="github" href={props.github} target="_blank" rel="noreferrer noopener">Github &nbsp;&nbsp;<FontAwesomeIcon icon={faGithub} /></a>
+                        <a className="github" href={props.github} target="_blank" rel="noreferrer noopener">View on Github</a>
                     }
                     {
                         props.deploy &&
