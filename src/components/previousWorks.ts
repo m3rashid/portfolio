@@ -14,21 +14,21 @@ export type TypePreviousWorks = {
 const previousWorks = [
   {
     id: 1,
-    name: "The Jamia Review",
-    type: "College Society",
-    role: "Web Team",
+    name: "Freelancing",
+    type: "Freelancing",
+    role: "Web Developer",
     worksDone: [
       {
-        id: 11,
-        work: 'Prototyping and making "admissions" website',
+        id: 31,
+        work: "Making websites with Nodejs, MongoDB, Reactjs and other technologies",
       },
       {
-        id: 12,
-        work: "Managing the web team, assigning tasks and supervision",
+        id: 32,
+        work: "Deployment to Heroku and AWS",
       },
       {
-        id: 13,
-        work: "Collaborating with the design and content teams for changes",
+        id: 33,
+        work: "Managing the clients day to day increasing needs",
       },
     ],
   },
@@ -56,21 +56,21 @@ const previousWorks = [
 
   {
     id: 3,
-    name: "Freelancing",
-    type: "Freelancing",
-    role: "Web Developer",
+    name: "The Jamia Review",
+    type: "College Society",
+    role: "Web Team",
     worksDone: [
       {
-        id: 31,
-        work: "Making websites with Nodejs, MongoDB, Reactjs and other technologies",
+        id: 11,
+        work: 'Prototyping and making "admissions" website',
       },
       {
-        id: 32,
-        work: "Deployment to Heroku and AWS",
+        id: 12,
+        work: "Managing the web team, assigning tasks and supervision",
       },
       {
-        id: 33,
-        work: "Managing the clients day to day increasing needs",
+        id: 13,
+        work: "Collaborating with the design and content teams for changes",
       },
     ],
   },
