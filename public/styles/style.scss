@@ -452,8 +452,11 @@ main#about {
           margin-top: 8px;
           color: white;
           list-style-type: none;
-          li:first-child {
+          li {
             color: $theme;
+            .value {
+              color: white;
+            }
           }
         }
       }

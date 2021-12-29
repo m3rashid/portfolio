@@ -652,8 +652,12 @@ main#about .right div.experience div.past-experience ul {
   list-style-type: none;
 }
 
-main#about .right div.experience div.past-experience ul li:first-child {
+main#about .right div.experience div.past-experience ul li {
   color: #66fcf1;
+}
+
+main#about .right div.experience div.past-experience ul li .value {
+  color: white;
 }
 
 @media (max-width: 700px) {

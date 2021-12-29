@@ -15,7 +15,10 @@ const PastExperience = ({ name, type, role, worksDone }: TypePreviousWorks) => {
       <ul>
         <li>Works: </li>
         {worksDone.map((detail) => (
-          <li key={detail.id}>{detail.work}</li>
+          <li key={detail.id}>
+            {"=> "}
+            <span className="value">{detail.work}</span>
+          </li>
         ))}
       </ul>
     </div>
