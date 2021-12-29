@@ -7,46 +7,48 @@
 }
 
 @font-face {
-  font-family: 'Ageo-bold';
+  font-family: "Ageo-bold";
   src: url("../font/bold.otf") format("opentype");
 }
 
 @font-face {
-  font-family: 'Ageo-extrabold';
+  font-family: "Ageo-extrabold";
   src: url("../font/extrabold.otf") format("opentype");
 }
 
 @font-face {
-  font-family: 'Ageo-heavy';
+  font-family: "Ageo-heavy";
   src: url("../font/heavy.otf") format("opentype");
 }
 
 @font-face {
-  font-family: 'Ageo-light';
+  font-family: "Ageo-light";
   src: url("../font/light.otf") format("opentype");
 }
 
 @font-face {
-  font-family: 'Ageo-medium';
+  font-family: "Ageo-medium";
   src: url("../font/medium.otf") format("opentype");
 }
 
 @font-face {
-  font-family: 'Ageo-normal';
+  font-family: "Ageo-normal";
   src: url("../font/normal.otf") format("opentype");
 }
 
 @font-face {
-  font-family: 'Ageo-semibold';
+  font-family: "Ageo-semibold";
   src: url("../font/semibold.otf") format("opentype");
 }
 
 @font-face {
-  font-family: 'Ageo-thin';
+  font-family: "Ageo-thin";
   src: url("../font/thin.otf") format("opentype");
 }
 
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
@@ -57,7 +59,7 @@
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  font-family: 'Ageo-medium';
+  font-family: "Ageo-medium";
 }
 
 html {
@@ -81,13 +83,13 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #FC1321;
+  background-color: #45a29e;
   border-radius: 5px;
   border: 2px solid black;
 }
 
 i.fas {
-  color: #FC1321;
+  color: #66fcf1;
   font-size: 5rem;
 }
 
@@ -96,7 +98,7 @@ a {
 }
 
 header {
-  padding: 40px 60px;
+  height: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -104,12 +106,13 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 40px 60px;
 }
 
 @media (max-width: 700px) {
@@ -124,22 +127,18 @@ header {
   }
 }
 
-header {
-  height: 100px;
-}
-
 header .left img {
   height: 70px;
-  border: 2px solid #FC1321;
+  border: 2px solid #45a29e;
   border-radius: 50%;
   margin-top: 6px;
 }
 
 header .right a {
-  color: #FC1321;
+  color: #66fcf1;
   background-color: transparent;
   padding: 8px 16px;
-  border: 1px solid #FC1321;
+  border: 1px solid #45a29e;
   font-size: 0.8rem;
   border-radius: 2px;
   font-weight: bolder;
@@ -147,7 +146,7 @@ header .right a {
 }
 
 header .right a:hover, header .right a:focus {
-  background-color: #FC1321;
+  background-color: #66fcf1;
   color: black;
 }
 
@@ -202,7 +201,7 @@ footer div.flex {
 
 footer .left a {
   margin-right: 15px;
-  color: #FC1321;
+  color: #66fcf1;
   font-size: 2rem;
 }
 
@@ -224,7 +223,7 @@ footer .right {
 }
 
 footer .right .navigate {
-  color: #FC1321;
+  color: #66fcf1;
   font-weight: 600;
   padding-bottom: 10px;
   font-size: 1.2rem;
@@ -238,7 +237,7 @@ footer .right a {
 }
 
 footer .right a:hover {
-  color: #FC1321;
+  color: #66fcf1;
 }
 
 @media (max-width: 700px) {
@@ -267,7 +266,8 @@ main#main {
   position: relative;
 }
 
-main#main div.computer-user, main#main div.back {
+main#main div.computer-user,
+main#main div.back {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -293,16 +293,17 @@ main#main div.computer-user {
           transform: translateY(-50%) translateX(-50%);
 }
 
-main#main div.computer-user div.hello, main#main div.computer-user div.there {
+main#main div.computer-user div.hello,
+main#main div.computer-user div.there {
   font-size: 6rem;
-  font-family: 'Ageo-extrabold';
+  font-family: "Ageo-extrabold";
   z-index: 2;
   text-shadow: 3px 0px 10px black;
 }
 
 main#main div.computer-user div.hello {
   margin-right: -80px;
-  color: #FC1321;
+  color: #66fcf1;
 }
 
 main#main div.computer-user div.there {
@@ -315,10 +316,10 @@ main#main div.computer-user img {
 }
 
 main#main div.back {
-  font-family: 'Ageo-extrabold';
+  font-family: "Ageo-extrabold";
   letter-spacing: 0.7rem;
   z-index: -1;
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.1);
   font-size: 10rem;
   font-weight: 700;
 }
@@ -327,7 +328,8 @@ main#main div.back {
   main#main div.computer-user img {
     width: 200px;
   }
-  main#main div.computer-user div.hello, main#main div.computer-user div.there {
+  main#main div.computer-user div.hello,
+  main#main div.computer-user div.there {
     font-size: 3rem;
   }
   main#main div.computer-user div.hello {
@@ -346,7 +348,8 @@ main#main div.back {
     width: 150px;
     padding-top: 30px;
   }
-  main#main div.computer-user div.hello, main#main div.computer-user div.there {
+  main#main div.computer-user div.hello,
+  main#main div.computer-user div.there {
     font-size: 2rem;
   }
   main#main div.computer-user div.hello {
@@ -376,7 +379,7 @@ main#works::-webkit-scrollbar-track {
 }
 
 main#works::-webkit-scrollbar-thumb {
-  background-color: #FC1321;
+  background-color: #45a29e;
   border-radius: 5px;
   border: 2px solid black;
 }
@@ -400,9 +403,11 @@ main#works div.flex {
 main#works h1 {
   text-align: center;
   margin-top: 30px;
+  color: #66fcf1;
 }
 
-main#works div.medium, main#works div.mini {
+main#works div.medium,
+main#works div.mini {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -421,30 +426,35 @@ main#works div.medium, main#works div.mini {
       flex-wrap: wrap;
 }
 
-main#works div.medium div.card, main#works div.mini div.card {
+main#works div.medium div.card,
+main#works div.mini div.card {
   width: 300px;
   border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.1);
   padding: 20px;
   -webkit-transition: all 5s 0s ease;
   transition: all 5s 0s ease;
 }
 
-main#works div.medium div.card h1, main#works div.mini div.card h1 {
+main#works div.medium div.card h1,
+main#works div.mini div.card h1 {
   margin-top: 0;
   margin-bottom: 10px;
 }
 
-main#works div.medium div.card p, main#works div.mini div.card p {
+main#works div.medium div.card p,
+main#works div.mini div.card p {
   text-align: center;
 }
 
-main#works div.medium div.card img, main#works div.mini div.card img {
+main#works div.medium div.card img,
+main#works div.mini div.card img {
   margin-top: 10px;
   width: 100%;
 }
 
-main#works div.medium div.card div.show, main#works div.mini div.card div.show {
+main#works div.medium div.card div.show,
+main#works div.mini div.card div.show {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -457,17 +467,20 @@ main#works div.medium div.card div.show, main#works div.mini div.card div.show {
   margin-top: 10px;
 }
 
-main#works div.medium div.card div.show a, main#works div.mini div.card div.show a {
-  color: white;
+main#works div.medium div.card div.show a,
+main#works div.mini div.card div.show a {
+  color: #66fcf1;
   background-color: transparent;
-  padding: 5px 10px;
-  border: 1px solid white;
+  padding: 7px 10px;
+  border: 1px solid #45a29e;
   border-radius: 2px;
   font-weight: bolder;
 }
 
-main#works div.medium div.card div.show a:hover, main#works div.medium div.card div.show a:focus, main#works div.mini div.card div.show a:hover, main#works div.mini div.card div.show a:focus {
-  background-color: white;
+main#works div.medium div.card div.show a:hover, main#works div.medium div.card div.show a:focus,
+main#works div.mini div.card div.show a:hover,
+main#works div.mini div.card div.show a:focus {
+  background-color: #66fcf1;
   color: black;
 }
 
@@ -488,7 +501,7 @@ main#about::-webkit-scrollbar-track {
 }
 
 main#about::-webkit-scrollbar-thumb {
-  background-color: #FC1321;
+  background-color: #45a29e;
   border-radius: 5px;
   border: 2px solid black;
 }
@@ -532,6 +545,10 @@ main#about .middle {
   text-align: center;
 }
 
+main#about .middle h1 .h1 {
+  color: #66fcf1;
+}
+
 main#about .middle div.description {
   font-size: 1.3rem;
   margin-bottom: 20px;
@@ -543,7 +560,7 @@ main#about .middle div.det {
 }
 
 main#about .middle div.det .entry {
-  color: #FC1321;
+  color: #66fcf1;
 }
 
 main#about .middle div.det .email {
