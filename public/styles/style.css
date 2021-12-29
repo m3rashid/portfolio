@@ -340,6 +340,7 @@ main#main div.back {
   }
   main#main div.back {
     font-size: 5rem;
+    font-weight: 900;
   }
 }
 
@@ -359,7 +360,8 @@ main#main div.back {
     margin-left: -35px;
   }
   main#main div.back {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    font-weight: 900;
   }
 }
 
@@ -564,6 +566,7 @@ main#about .middle div.det .entry {
 }
 
 main#about .middle div.det .email {
+  font-size: 1.1rem;
   font-family: monospace;
   -webkit-user-select: text;
      -moz-user-select: text;
@@ -616,6 +619,41 @@ main#about .right div {
 
 main#about .right div svg {
   margin: 8px;
+}
+
+main#about .right div.experience {
+  margin-bottom: 20px;
+}
+
+main#about .right div.experience div.past-experience {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  text-align: start;
+  padding: 15px;
+  margin: 10px;
+  font-size: 1.2rem;
+}
+
+main#about .right div.experience div.past-experience .name,
+main#about .right div.experience div.past-experience .type,
+main#about .right div.experience div.past-experience .role {
+  color: #66fcf1;
+}
+
+main#about .right div.experience div.past-experience .name .value,
+main#about .right div.experience div.past-experience .type .value,
+main#about .right div.experience div.past-experience .role .value {
+  color: white;
+}
+
+main#about .right div.experience div.past-experience ul {
+  margin-top: 8px;
+  color: white;
+  list-style-type: none;
+}
+
+main#about .right div.experience div.past-experience ul li:first-child {
+  color: #66fcf1;
 }
 
 @media (max-width: 700px) {

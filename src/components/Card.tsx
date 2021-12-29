@@ -1,4 +1,4 @@
-import { ProjectType } from "./Works";
+import { ProjectType } from "./projectWorks";
 
 const Card = ({
   id,

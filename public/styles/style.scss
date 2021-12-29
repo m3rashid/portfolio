@@ -269,6 +269,7 @@ main#main {
     }
     div.back {
       font-size: 5rem;
+      font-weight: 900;
     }
   }
   @media (max-width: 400px) {
@@ -289,7 +290,8 @@ main#main {
       }
     }
     div.back {
-      font-size: 2.5rem;
+      font-size: 2rem;
+      font-weight: 900;
     }
   }
 }
@@ -400,6 +402,7 @@ main#about {
         color: $theme;
       }
       .email {
+        font-size: 1.1rem;
         font-family: monospace;
         user-select: text;
       }
@@ -426,6 +429,33 @@ main#about {
       text-align: center;
       svg {
         margin: 8px;
+      }
+    }
+    div.experience {
+      margin-bottom: 20px;
+      div.past-experience {
+        background-color: $opacity;
+        border-radius: 5px;
+        text-align: start;
+        padding: 15px;
+        margin: 10px;
+        font-size: 1.2rem;
+        .name,
+        .type,
+        .role {
+          color: $theme;
+          .value {
+            color: white;
+          }
+        }
+        ul {
+          margin-top: 8px;
+          color: white;
+          list-style-type: none;
+          li:first-child {
+            color: $theme;
+          }
+        }
       }
     }
   }

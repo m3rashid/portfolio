@@ -20,6 +20,7 @@ const Footer: FC = () => {
           >
             <Fagithub />
           </a>
+
           <a
             href="https://www.linkedin.com/in/m3rashid/"
             target="_blank"
@@ -27,6 +28,7 @@ const Footer: FC = () => {
           >
             <Falinkedin />
           </a>
+
           <a
             href="https://twitter.com/m3_rashid"
             target="_blank"
@@ -34,6 +36,7 @@ const Footer: FC = () => {
           >
             <Fatwitter />
           </a>
+
           <a
             href="https://www.youtube.com/channel/UCeNqGjDNF0JJdWbd8jrgJdw"
             target="_blank"
@@ -41,6 +44,7 @@ const Footer: FC = () => {
           >
             <Fayoutube />
           </a>
+
           <a
             href="https://dev.to/m3rashid"
             target="_blank"
@@ -51,13 +55,16 @@ const Footer: FC = () => {
         </div>
         <div className="right">
           <div className="navigate">NAVIGATE</div>
+
           <div className="links">
             <Link className="footer-link" to="/">
               HOME
             </Link>
+
             <Link className="footer-link" to="/about">
               ABOUT
             </Link>
+
             <Link className="footer-link" to="/works">
               WORKS
             </Link>
