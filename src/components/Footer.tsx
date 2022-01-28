@@ -7,6 +7,7 @@ import Falinkedin from "../svg/linkedin";
 import Fatwitter from "../svg/twitter";
 import Fayoutube from "../svg/youtube";
 import Fadevdotto from "../svg/devdotto";
+import FaInstagram from "../svg/instagram";
 
 const Footer: FC = () => {
   return (
@@ -51,6 +52,13 @@ const Footer: FC = () => {
             rel="noreferrer noopener"
           >
             <Fadevdotto />
+          </a>
+          <a
+            href="https://www.instagram.com/m3_rashid/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <FaInstagram />
           </a>
         </div>
         <div className="right">

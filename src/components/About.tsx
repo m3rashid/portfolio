@@ -1,46 +1,6 @@
 import { FC } from "react";
-
-// Technologies I work with
-import Fahtml5 from "../svg/html5";
-import Facss3 from "../svg/css3";
-import Fasass from "../svg/sass";
-import Fajavascript from "../svg/javascript";
-import Fatailwindcss from "../svg/tailwindcss";
-import Fabootstrap from "../svg/bootstrap";
-import Fanpm from "../svg/npm";
-import Fareact from "../svg/react";
-import Faredux from "../svg/redux";
-import Fafirebase from "../svg/firebase";
-import Faexpress from "../svg/express";
-import Fanextdotjs from "../svg/nextdotjs";
-import Fanodedotjs from "../svg/nodedotjs";
-import Faelectron from "../svg/electron";
-import Fajquery from "../svg/jquery";
-import Fagraphql from "../svg/graphql";
-import Famongodb from "../svg/mongodb";
-import Fawordpress from "../svg/wordpress";
-import Fasqlite from "../svg/sqlite";
-import Fapython from "../svg/python";
-import Faflask from "../svg/flask";
-import Faandroid from "../svg/android";
-import Faandroidstudio from "../svg/androidstudio";
-import Fac from "../svg/c";
-import Facplusplus from "../svg/cplusplus";
-
-// Tools I use
-import Favisualstudiocode from "../svg/visualstudiocode";
-import Fagit from "../svg/git";
-import Falinux from "../svg/linux";
-import Fawindows from "../svg/windows";
-import Fanetlify from "../svg/netlify";
-import Faheroku from "../svg/heroku";
-import Favercel from "../svg/vercel";
-import Faamazonaws from "../svg/amazonaws";
-
-import previousWorks from // TypePreviousWorks,
-// TypesWorksDone,
-"./previousWorks";
-
+import Tools from "./Tools";
+import previousWorks from "./previousWorks"; // TypesWorksDone, // TypePreviousWorks,
 import PastExperience from "./PastExperience";
 
 const About: FC = () => {
@@ -48,7 +8,7 @@ const About: FC = () => {
     <main id="about">
       <div className="flex">
         <div className="left">
-          <img src={process.env.PUBLIC_URL + "/images/man.png"} alt="" />
+          <img src="/images/man.png" alt="" />
         </div>
         <div className="middle">
           <h1>
@@ -60,51 +20,53 @@ const About: FC = () => {
           </div>
 
           <div className="details">
-            <div className="det">
-              <span className="entry">Full Name: &nbsp;</span>
-              <span className="value">MD Rashid Hussain</span>
-            </div>
+            <table className="det">
+              <tr>
+                <td className="entry">Full Name :</td>
+                <td className="value">MD Rashid Hussain</td>
+              </tr>
 
-            <div className="det">
-              <span className="entry">From: &nbsp;</span>
-              <span className="value">Bhagalpur, Bihar, India</span>
-            </div>
+              <tr>
+                <td className="entry">From :</td>
+                <td className="value">Bhagalpur, Bihar, India</td>
+              </tr>
 
-            <div className="det">
-              <span className="entry">University: &nbsp;</span>
-              <span className="value">Jamia Millia Islamia 🇮🇳</span>
-            </div>
+              <tr>
+                <td className="entry">University :</td>
+                <td className="value">Jamia Millia Islamia 🇮🇳</td>
+              </tr>
 
-            <div className="det">
-              <span className="entry">Interests: &nbsp;</span>
-              <span className="value">
-                Web Development, Web Security, Programming
-              </span>
-            </div>
+              <tr>
+                <td className="entry">Interests :</td>
+                <td className="value">
+                  Web Development, Web Security, Programming
+                </td>
+              </tr>
 
-            <div className="det">
-              <span className="entry">Soft Skills: &nbsp;</span>
-              <span className="value">
-                Problem Solving, Leadership, Management
-              </span>
-            </div>
+              <tr>
+                <td className="entry">Soft Skills :</td>
+                <td className="value">
+                  Problem Solving, Leadership, Management
+                </td>
+              </tr>
 
-            <div className="det">
-              <span className="entry">Hobbies: &nbsp;</span>
-              <span className="value">
-                Football, Creative Writing, Reading, Singing
-              </span>
-            </div>
+              <tr>
+                <td className="entry">Hobbies :</td>
+                <td className="value">
+                  Football, Creative Writing, Reading, Singing
+                </td>
+              </tr>
 
-            <div className="det">
-              <span className="entry">Email(s): &nbsp;</span>
-              <span className="email">md2000399@st.jmi.ac.in</span>
-            </div>
+              <tr>
+                <td className="entry">Email(s) :</td>
+                <td className="email">md2000399@st.jmi.ac.in</td>
+              </tr>
 
-            <div className="det">
-              <span className="entry">Email(s): &nbsp;</span>
-              <span className="email">mdrashid.hussain.786.01@gmail.com</span>
-            </div>
+              <tr>
+                <td className="entry">Email(s) :</td>
+                <td className="email">mdrashid.hussain.786.01@gmail.com</td>
+              </tr>
+            </table>
           </div>
         </div>
         <div className="right">
@@ -120,49 +82,7 @@ const About: FC = () => {
               />
             ))}
           </div>
-          <div className="icons-div">
-            <h1>Technologies I work with</h1>
-            <div>
-              <Fahtml5 />
-              <Facss3 />
-              <Fasass />
-              <Fajavascript />
-              <Fatailwindcss />
-              <Fabootstrap />
-              <Fanpm />
-              <Fareact />
-              <Faredux />
-              <Fafirebase />
-              <Faexpress />
-              <Fanextdotjs />
-              <Fanodedotjs />
-              <Faelectron />
-              <Fajquery />
-              <Fagraphql />
-              <Famongodb />
-              <Fawordpress />
-              <Fasqlite />
-              <Fapython />
-              <Faflask />
-              <Faandroid />
-              <Faandroidstudio />
-              <Fac />
-              <Facplusplus />
-            </div>
-          </div>
-          <div className="icons-div">
-            <h1>Tools I use</h1>
-            <div>
-              <Favisualstudiocode />
-              <Fagit />
-              <Falinux />
-              <Fawindows />
-              <Fanetlify />
-              <Faheroku />
-              <Favercel />
-              <Faamazonaws />
-            </div>
-          </div>
+          <Tools />
         </div>
       </div>
     </main>

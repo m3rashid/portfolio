@@ -395,16 +395,26 @@ main#about {
       font-size: 1.3rem;
       margin-bottom: 20px;
     }
-    div.det {
-      padding-top: 6px;
-      font-size: 1.3rem;
-      .entry {
-        color: $theme;
-      }
-      .email {
-        font-size: 1.1rem;
-        font-family: monospace;
-        user-select: text;
+    div.details {
+      table.det {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+        td {
+          padding: 3px 8px;
+          text-align: left;
+        }
+        padding-top: 6px;
+        font-size: 1.3rem;
+        .entry {
+          color: $theme;
+          text-align: right;
+        }
+        .email {
+          font-size: 1.1rem;
+          font-family: monospace;
+          user-select: text;
+        }
       }
     }
   }
@@ -456,6 +466,14 @@ main#about {
             color: $theme;
             .value {
               color: white;
+            }
+          }
+          div.about_li {
+            display: flex;
+            align-items: flex-start;
+            justify-content: start;
+            .work {
+              text-align: left;
             }
           }
         }

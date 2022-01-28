@@ -556,16 +556,25 @@ main#about .middle div.description {
   margin-bottom: 20px;
 }
 
-main#about .middle div.det {
+main#about .middle div.details table.det {
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
   padding-top: 6px;
   font-size: 1.3rem;
 }
 
-main#about .middle div.det .entry {
-  color: #66fcf1;
+main#about .middle div.details table.det td {
+  padding: 3px 8px;
+  text-align: left;
 }
 
-main#about .middle div.det .email {
+main#about .middle div.details table.det .entry {
+  color: #66fcf1;
+  text-align: right;
+}
+
+main#about .middle div.details table.det .email {
   font-size: 1.1rem;
   font-family: monospace;
   -webkit-user-select: text;
@@ -658,6 +667,22 @@ main#about .right div.experience div.past-experience ul li {
 
 main#about .right div.experience div.past-experience ul li .value {
   color: white;
+}
+
+main#about .right div.experience div.past-experience ul div.about_li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+main#about .right div.experience div.past-experience ul div.about_li .work {
+  text-align: left;
 }
 
 @media (max-width: 700px) {
