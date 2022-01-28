@@ -1,6 +1,6 @@
 import { FC } from "react";
 import Card from "./Card";
-import projects, { ProjectType } from "./projectWorks";
+import projects /* ProjectType */ from "./projectWorks";
 
 const Works: FC = () => {
   return (

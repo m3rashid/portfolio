@@ -37,10 +37,9 @@ import Faheroku from "../svg/heroku";
 import Favercel from "../svg/vercel";
 import Faamazonaws from "../svg/amazonaws";
 
-import previousWorks, {
-  TypePreviousWorks,
-  TypesWorksDone,
-} from "./previousWorks";
+import previousWorks from // TypePreviousWorks,
+// TypesWorksDone,
+"./previousWorks";
 
 import PastExperience from "./PastExperience";
 
