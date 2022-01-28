@@ -379,7 +379,7 @@ main#about {
     img {
       width: 200px;
       margin-bottom: 20px;
-      border-radius: 30%;
+      border-radius: 50%;
     }
   }
   .middle {
@@ -396,19 +396,26 @@ main#about {
       margin-bottom: 20px;
     }
     div.details {
-      table.det {
-        display: block;
-        overflow-x: auto;
-        white-space: nowrap;
-        td {
-          padding: 3px 8px;
-          text-align: left;
-        }
-        padding-top: 6px;
+      width: 100%;
+      div.det {
+        background-color: $opacity;
+        border-radius: 5px;
+        padding: 15px;
         font-size: 1.3rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        @media (min-width: 550px) {
+          grid-template-columns: 1fr 3fr;
+          .value,
+          .email {
+            text-align: left;
+          }
+        }
         .entry {
           color: $theme;
-          text-align: right;
+          @media (max-width: 550px) {
+            margin-top: 10px;
+          }
         }
         .email {
           font-size: 1.1rem;

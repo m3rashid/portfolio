@@ -527,7 +527,7 @@ main#about div.flex {
 main#about .left img {
   width: 200px;
   margin-bottom: 20px;
-  border-radius: 30%;
+  border-radius: 50%;
 }
 
 main#about .middle {
@@ -556,25 +556,43 @@ main#about .middle div.description {
   margin-bottom: 20px;
 }
 
-main#about .middle div.details table.det {
-  display: block;
-  overflow-x: auto;
-  white-space: nowrap;
-  padding-top: 6px;
+main#about .middle div.details {
+  width: 100%;
+}
+
+main#about .middle div.details div.det {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  padding: 15px;
   font-size: 1.3rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
 }
 
-main#about .middle div.details table.det td {
-  padding: 3px 8px;
-  text-align: left;
+@media (min-width: 550px) {
+  main#about .middle div.details div.det {
+    -ms-grid-columns: 1fr 3fr;
+        grid-template-columns: 1fr 3fr;
+  }
+  main#about .middle div.details div.det .value,
+  main#about .middle div.details div.det .email {
+    text-align: left;
+  }
 }
 
-main#about .middle div.details table.det .entry {
+main#about .middle div.details div.det .entry {
   color: #66fcf1;
-  text-align: right;
 }
 
-main#about .middle div.details table.det .email {
+@media (max-width: 550px) {
+  main#about .middle div.details div.det .entry {
+    margin-top: 10px;
+  }
+}
+
+main#about .middle div.details div.det .email {
   font-size: 1.1rem;
   font-family: monospace;
   -webkit-user-select: text;

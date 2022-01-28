@@ -5,7 +5,6 @@ import Fasass from "../svg/sass";
 import Fajavascript from "../svg/javascript";
 import Fatailwindcss from "../svg/tailwindcss";
 import Fabootstrap from "../svg/bootstrap";
-import Fanpm from "../svg/npm";
 import Fareact from "../svg/react";
 import Faredux from "../svg/redux";
 import Fafirebase from "../svg/firebase";
@@ -47,7 +46,6 @@ const Tools = () => {
           <Fajavascript />
           <Fatailwindcss />
           <Fabootstrap />
-          <Fanpm />
           <Fareact />
           <Faredux />
           <Fafirebase />

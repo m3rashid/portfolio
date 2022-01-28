@@ -16,7 +16,7 @@ const previousWorks = [
     id: 1,
     name: "Vinnovate Technologies",
     type: "Internship",
-    role: "Full stack Web Developer",
+    role: "MERN stack Developer",
     worksDone: [
       {
         id: 11,

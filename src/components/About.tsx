@@ -1,6 +1,6 @@
 import { FC } from "react";
 import Tools from "./Tools";
-import previousWorks from "./previousWorks"; // TypesWorksDone, // TypePreviousWorks,
+import previousWorks from "./previousWorks"; // TypesWorksDone, TypePreviousWorks,
 import PastExperience from "./PastExperience";
 
 const About: FC = () => {
@@ -8,7 +8,7 @@ const About: FC = () => {
     <main id="about">
       <div className="flex">
         <div className="left">
-          <img src="/images/man.png" alt="" />
+          <img src="/images/author.jpeg" alt="" />
         </div>
         <div className="middle">
           <h1>
@@ -20,53 +20,37 @@ const About: FC = () => {
           </div>
 
           <div className="details">
-            <table className="det">
-              <tr>
-                <td className="entry">Full Name :</td>
-                <td className="value">MD Rashid Hussain</td>
-              </tr>
+            <div className="det">
+              <div className="entry">Full Name</div>
+              <div className="value">MD Rashid Hussain</div>
 
-              <tr>
-                <td className="entry">From :</td>
-                <td className="value">Bhagalpur, Bihar, India</td>
-              </tr>
+              <div className="entry">From</div>
+              <div className="value">Bhagalpur, Bihar, India</div>
 
-              <tr>
-                <td className="entry">University :</td>
-                <td className="value">Jamia Millia Islamia 🇮🇳</td>
-              </tr>
+              <div className="entry">University</div>
+              <div className="value">Jamia Millia Islamia 🇮🇳</div>
 
-              <tr>
-                <td className="entry">Interests :</td>
-                <td className="value">
-                  Web Development, Web Security, Programming
-                </td>
-              </tr>
+              <div className="entry">Interests</div>
+              <div className="value">
+                Web Development, Web Security, Programming
+              </div>
 
-              <tr>
-                <td className="entry">Soft Skills :</td>
-                <td className="value">
-                  Problem Solving, Leadership, Management
-                </td>
-              </tr>
+              <div className="entry">Soft Skills</div>
+              <div className="value">
+                Problem Solving, Leadership, Management
+              </div>
 
-              <tr>
-                <td className="entry">Hobbies :</td>
-                <td className="value">
-                  Football, Creative Writing, Reading, Singing
-                </td>
-              </tr>
+              <div className="entry">Hobbies</div>
+              <div className="value">
+                Football, Creative Writing, Reading, Singing
+              </div>
 
-              <tr>
-                <td className="entry">Email(s) :</td>
-                <td className="email">md2000399@st.jmi.ac.in</td>
-              </tr>
+              <div className="entry">Email(s)</div>
+              <div className="email">md2000399@st.jmi.ac.in</div>
 
-              <tr>
-                <td className="entry">Email(s) :</td>
-                <td className="email">mdrashid.hussain.786.01@gmail.com</td>
-              </tr>
-            </table>
+              <div className="entry"></div>
+              <div className="email">mdrashid.hussain.786.01@gmail.com</div>
+            </div>
           </div>
         </div>
         <div className="right">
