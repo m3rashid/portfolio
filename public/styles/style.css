@@ -131,6 +131,7 @@ header .left img {
   height: 70px;
   border: 2px solid #45a29e;
   border-radius: 50%;
+  padding-bottom: 5px;
   margin-top: 6px;
 }
 
@@ -491,6 +492,16 @@ main#about {
   padding: 60px;
   overflow-y: scroll;
   overflow-x: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
 }
 
@@ -508,7 +519,22 @@ main#about::-webkit-scrollbar-thumb {
   border: 2px solid black;
 }
 
-main#about div.flex {
+main#about div.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+}
+
+@media (max-width: 900px) {
+  main#about div.grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+main#about .left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -519,9 +545,7 @@ main#about div.flex {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  text-align: center;
 }
 
 main#about .left img {
@@ -530,7 +554,16 @@ main#about .left img {
   border-radius: 50%;
 }
 
-main#about .middle {
+main#about .left h1 .h1 {
+  color: #66fcf1;
+}
+
+main#about .left div.description {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+
+main#about .left div.details {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -541,26 +574,14 @@ main#about .middle {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
 }
 
-main#about .middle h1 .h1 {
-  color: #66fcf1;
+main#about .left div.details h1.edu {
+  margin-top: 25px;
 }
 
-main#about .middle div.description {
-  font-size: 1.3rem;
-  margin-bottom: 20px;
-}
-
-main#about .middle div.details {
-  width: 100%;
-}
-
-main#about .middle div.details div.det {
+main#about .left div.details div.det,
+main#about .left div.details div.school {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 5px;
   padding: 15px;
@@ -572,33 +593,83 @@ main#about .middle div.details div.det {
 }
 
 @media (min-width: 550px) {
-  main#about .middle div.details div.det {
+  main#about .left div.details div.det,
+  main#about .left div.details div.school {
     -ms-grid-columns: 1fr 3fr;
         grid-template-columns: 1fr 3fr;
   }
-  main#about .middle div.details div.det .value,
-  main#about .middle div.details div.det .email {
+  main#about .left div.details div.det .value,
+  main#about .left div.details div.det .email,
+  main#about .left div.details div.school .value,
+  main#about .left div.details div.school .email {
     text-align: left;
   }
 }
 
-main#about .middle div.details div.det .entry {
+main#about .left div.details div.det .entry,
+main#about .left div.details div.school .entry {
   color: #66fcf1;
 }
 
 @media (max-width: 550px) {
-  main#about .middle div.details div.det .entry {
+  main#about .left div.details div.det .entry,
+  main#about .left div.details div.school .entry {
     margin-top: 10px;
   }
 }
 
-main#about .middle div.details div.det .email {
+main#about .left div.details div.det .email,
+main#about .left div.details div.school .email {
   font-size: 1.1rem;
   font-family: monospace;
   -webkit-user-select: text;
      -moz-user-select: text;
       -ms-user-select: text;
           user-select: text;
+}
+
+main#about .left div.details div.school {
+  margin: 5px;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  width: 100%;
+}
+
+main#about .left div.details div.school div.name {
+  color: #66fcf1;
+  font-weight: 500;
+  padding-bottom: 5px;
+  font-size: 1.4rem;
+}
+
+main#about .left div.details div.school div.add {
+  color: #45a29e;
+}
+
+main#about .left div.details .icons-div {
+  max-width: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 30px;
+}
+
+main#about .left div.details .icons-div div {
+  padding-top: 5px;
+}
+
+main#about .left div.details .icons-div div svg {
+  margin: 5px;
 }
 
 main#about .right {
@@ -609,31 +680,8 @@ main#about .right {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin-top: 40px;
   max-width: 520px;
-}
-
-main#about .right .icons-div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 20px;
 }
 
 main#about .right h1 {
@@ -648,11 +696,7 @@ main#about .right div svg {
   margin: 8px;
 }
 
-main#about .right div.experience {
-  margin-bottom: 20px;
-}
-
-main#about .right div.experience div.past-experience {
+main#about .right div.past-experience {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 5px;
   text-align: start;
@@ -661,33 +705,33 @@ main#about .right div.experience div.past-experience {
   font-size: 1.2rem;
 }
 
-main#about .right div.experience div.past-experience .name,
-main#about .right div.experience div.past-experience .type,
-main#about .right div.experience div.past-experience .role {
+main#about .right div.past-experience .name,
+main#about .right div.past-experience .type,
+main#about .right div.past-experience .role {
   color: #66fcf1;
 }
 
-main#about .right div.experience div.past-experience .name .value,
-main#about .right div.experience div.past-experience .type .value,
-main#about .right div.experience div.past-experience .role .value {
+main#about .right div.past-experience .name .value,
+main#about .right div.past-experience .type .value,
+main#about .right div.past-experience .role .value {
   color: white;
 }
 
-main#about .right div.experience div.past-experience ul {
+main#about .right div.past-experience ul {
   margin-top: 8px;
   color: white;
   list-style-type: none;
 }
 
-main#about .right div.experience div.past-experience ul li {
+main#about .right div.past-experience ul li {
   color: #66fcf1;
 }
 
-main#about .right div.experience div.past-experience ul li .value {
+main#about .right div.past-experience ul li .value {
   color: white;
 }
 
-main#about .right div.experience div.past-experience ul div.about_li {
+main#about .right div.past-experience ul div.about_li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -699,7 +743,7 @@ main#about .right div.experience div.past-experience ul div.about_li {
           justify-content: start;
 }
 
-main#about .right div.experience div.past-experience ul div.about_li .work {
+main#about .right div.past-experience ul div.about_li .work {
   text-align: left;
 }
 

@@ -111,6 +111,7 @@ header {
       height: 70px;
       border: 2px solid $theme-dark;
       border-radius: 50%;
+      padding-bottom: 5px;
       margin-top: 6px;
     }
   }
@@ -367,27 +368,31 @@ main#about {
   padding: 60px;
   overflow-y: scroll;
   overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
+  // margin: auto;
   @include scrollbar();
-  div.flex {
+  div.grid {
+    // width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    @media (max-width: 900px) {
+      grid-template-columns: 1fr;
+    }
+  }
+  .left {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
-  }
-  .left {
+    text-align: center;
     img {
       width: 200px;
       margin-bottom: 20px;
       border-radius: 50%;
     }
-  }
-  .middle {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
     h1 .h1 {
       color: $theme;
     }
@@ -396,8 +401,15 @@ main#about {
       margin-bottom: 20px;
     }
     div.details {
-      width: 100%;
-      div.det {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h1.edu {
+        margin-top: 25px;
+      }
+
+      div.det,
+      div.school {
         background-color: $opacity;
         border-radius: 5px;
         padding: 15px;
@@ -423,22 +435,42 @@ main#about {
           user-select: text;
         }
       }
+      div.school {
+        margin: 5px;
+        grid-template-columns: 1fr;
+        width: 100%;
+        div.name {
+          color: $theme;
+          font-weight: 500;
+          padding-bottom: 5px;
+          font-size: 1.4rem;
+        }
+        div.add {
+          color: $theme-dark;
+        }
+      }
+      .icons-div {
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+        div {
+          padding-top: 5px;
+          svg {
+            margin: 5px;
+          }
+        }
+      }
     }
   }
   .right {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     margin-top: 40px;
     max-width: 520px;
-    .icons-div {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 20px;
-    }
+
     h1 {
       text-align: center;
     }
@@ -448,40 +480,37 @@ main#about {
         margin: 8px;
       }
     }
-    div.experience {
-      margin-bottom: 20px;
-      div.past-experience {
-        background-color: $opacity;
-        border-radius: 5px;
-        text-align: start;
-        padding: 15px;
-        margin: 10px;
-        font-size: 1.2rem;
-        .name,
-        .type,
-        .role {
+    div.past-experience {
+      background-color: $opacity;
+      border-radius: 5px;
+      text-align: start;
+      padding: 15px;
+      margin: 10px;
+      font-size: 1.2rem;
+      .name,
+      .type,
+      .role {
+        color: $theme;
+        .value {
+          color: white;
+        }
+      }
+      ul {
+        margin-top: 8px;
+        color: white;
+        list-style-type: none;
+        li {
           color: $theme;
           .value {
             color: white;
           }
         }
-        ul {
-          margin-top: 8px;
-          color: white;
-          list-style-type: none;
-          li {
-            color: $theme;
-            .value {
-              color: white;
-            }
-          }
-          div.about_li {
-            display: flex;
-            align-items: flex-start;
-            justify-content: start;
-            .work {
-              text-align: left;
-            }
+        div.about_li {
+          display: flex;
+          align-items: flex-start;
+          justify-content: start;
+          .work {
+            text-align: left;
           }
         }
       }
