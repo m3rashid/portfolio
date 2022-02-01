@@ -32,6 +32,7 @@ const About: FC = () => {
               name={prev.name}
               type={prev.type}
               role={prev.role}
+              tenure={prev.tenure}
               worksDone={prev.worksDone}
             />
           ))}

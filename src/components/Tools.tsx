@@ -1,42 +1,44 @@
+import { lazy, Suspense } from "react";
+
 // Technologies I work with
-import Fahtml5 from "../svg/html5";
-import Facss3 from "../svg/css3";
-import Fasass from "../svg/sass";
-import Fajavascript from "../svg/javascript";
-import Fatailwindcss from "../svg/tailwindcss";
-import Fabootstrap from "../svg/bootstrap";
-import Fareact from "../svg/react";
-import Faredux from "../svg/redux";
-import Fafirebase from "../svg/firebase";
-import Faexpress from "../svg/express";
-import Fanextdotjs from "../svg/nextdotjs";
-import Fanodedotjs from "../svg/nodedotjs";
-import Faelectron from "../svg/electron";
-import Fajquery from "../svg/jquery";
-import Fagraphql from "../svg/graphql";
-import Famongodb from "../svg/mongodb";
-import Fawordpress from "../svg/wordpress";
-import Fasqlite from "../svg/sqlite";
-import Fapython from "../svg/python";
-import Faflask from "../svg/flask";
-import Faandroid from "../svg/android";
-import Faandroidstudio from "../svg/androidstudio";
-import Fac from "../svg/c";
-import Facplusplus from "../svg/cplusplus";
+const Fahtml5 = lazy(() => import("../svg/html5"));
+const Facss3 = lazy(() => import("../svg/css3"));
+const Fasass = lazy(() => import("../svg/sass"));
+const Fajavascript = lazy(() => import("../svg/javascript"));
+const Fatailwindcss = lazy(() => import("../svg/tailwindcss"));
+const Fabootstrap = lazy(() => import("../svg/bootstrap"));
+const Fareact = lazy(() => import("../svg/react"));
+const Faredux = lazy(() => import("../svg/redux"));
+const Fafirebase = lazy(() => import("../svg/firebase"));
+const Faexpress = lazy(() => import("../svg/express"));
+const Fanextdotjs = lazy(() => import("../svg/nextdotjs"));
+const Fanodedotjs = lazy(() => import("../svg/nodedotjs"));
+const Faelectron = lazy(() => import("../svg/electron"));
+const Fajquery = lazy(() => import("../svg/jquery"));
+const Fagraphql = lazy(() => import("../svg/graphql"));
+const Famongodb = lazy(() => import("../svg/mongodb"));
+const Fawordpress = lazy(() => import("../svg/wordpress"));
+const Fasqlite = lazy(() => import("../svg/sqlite"));
+const Fapython = lazy(() => import("../svg/python"));
+const Faflask = lazy(() => import("../svg/flask"));
+const Faandroid = lazy(() => import("../svg/android"));
+const Faandroidstudio = lazy(() => import("../svg/androidstudio"));
+const Fac = lazy(() => import("../svg/c"));
+const Facplusplus = lazy(() => import("../svg/cplusplus"));
 
 // Tools I use
-import Favisualstudiocode from "../svg/visualstudiocode";
-import Fagit from "../svg/git";
-import Falinux from "../svg/linux";
-import Fawindows from "../svg/windows";
-import Fanetlify from "../svg/netlify";
-import Faheroku from "../svg/heroku";
-import Favercel from "../svg/vercel";
-import Faamazonaws from "../svg/amazonaws";
+const Favisualstudiocode = lazy(() => import("../svg/visualstudiocode"));
+const Fagit = lazy(() => import("../svg/git"));
+const Falinux = lazy(() => import("../svg/linux"));
+const Fawindows = lazy(() => import("../svg/windows"));
+const Fanetlify = lazy(() => import("../svg/netlify"));
+const Faheroku = lazy(() => import("../svg/heroku"));
+const Favercel = lazy(() => import("../svg/vercel"));
+const Faamazonaws = lazy(() => import("../svg/amazonaws"));
 
 const Tools = () => {
   return (
-    <>
+    <Suspense fallback={<div>Loading ...</div>}>
       <div className="icons-div">
         <h1>Technologies I work with</h1>
         <div>
@@ -79,7 +81,7 @@ const Tools = () => {
           <Faamazonaws />
         </div>
       </div>
-    </>
+    </Suspense>
   );
 };
 

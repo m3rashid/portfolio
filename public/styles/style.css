@@ -131,7 +131,6 @@ header .left img {
   height: 70px;
   border: 2px solid #45a29e;
   border-radius: 50%;
-  padding-bottom: 5px;
   margin-top: 6px;
 }
 
@@ -409,8 +408,7 @@ main#works h1 {
   color: #66fcf1;
 }
 
-main#works div.medium,
-main#works div.mini {
+main#works div.medium {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -427,10 +425,10 @@ main#works div.mini {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  max-width: 90%;
 }
 
-main#works div.medium div.card,
-main#works div.mini div.card {
+main#works div.medium div.card {
   width: 300px;
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.1);
@@ -439,25 +437,21 @@ main#works div.mini div.card {
   transition: all 5s 0s ease;
 }
 
-main#works div.medium div.card h1,
-main#works div.mini div.card h1 {
+main#works div.medium div.card h1 {
   margin-top: 0;
   margin-bottom: 10px;
 }
 
-main#works div.medium div.card p,
-main#works div.mini div.card p {
+main#works div.medium div.card p {
   text-align: center;
 }
 
-main#works div.medium div.card img,
-main#works div.mini div.card img {
+main#works div.medium div.card img {
   margin-top: 10px;
   width: 100%;
 }
 
-main#works div.medium div.card div.show,
-main#works div.mini div.card div.show {
+main#works div.medium div.card div.show {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -470,8 +464,7 @@ main#works div.mini div.card div.show {
   margin-top: 10px;
 }
 
-main#works div.medium div.card div.show a,
-main#works div.mini div.card div.show a {
+main#works div.medium div.card div.show a {
   color: #66fcf1;
   background-color: transparent;
   padding: 7px 10px;
@@ -480,9 +473,7 @@ main#works div.mini div.card div.show a {
   font-weight: bolder;
 }
 
-main#works div.medium div.card div.show a:hover, main#works div.medium div.card div.show a:focus,
-main#works div.mini div.card div.show a:hover,
-main#works div.mini div.card div.show a:focus {
+main#works div.medium div.card div.show a:hover, main#works div.medium div.card div.show a:focus {
   background-color: #66fcf1;
   color: black;
 }
@@ -715,6 +706,10 @@ main#about .right div.past-experience .name .value,
 main#about .right div.past-experience .type .value,
 main#about .right div.past-experience .role .value {
   color: white;
+}
+
+main#about .right div.past-experience .name .value {
+  font-family: monospace;
 }
 
 main#about .right div.past-experience ul {

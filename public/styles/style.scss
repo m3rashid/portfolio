@@ -111,7 +111,6 @@ header {
       height: 70px;
       border: 2px solid $theme-dark;
       border-radius: 50%;
-      padding-bottom: 5px;
       margin-top: 6px;
     }
   }
@@ -314,8 +313,7 @@ main#works {
     margin-top: 30px;
     color: $theme;
   }
-  div.medium,
-  div.mini {
+  div.medium {
     display: flex;
     flex-direction: row;
     column-gap: 20px;
@@ -323,6 +321,7 @@ main#works {
     padding: 40px 60px;
     justify-content: center;
     flex-wrap: wrap;
+    max-width: 90%;
     div.card {
       width: 300px;
       border-radius: 5px;
@@ -494,6 +493,9 @@ main#about {
         .value {
           color: white;
         }
+      }
+      .name .value {
+        font-family: monospace;
       }
       ul {
         margin-top: 8px;

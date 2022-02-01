@@ -9,88 +9,94 @@ export type TypePreviousWorks = {
   type: string;
   role: string;
   worksDone: TypesWorksDone[];
+  tenure: string;
 };
 
 const previousWorks = [
   {
     id: 1,
-    name: "Vinnovate Technologies",
+    name: "M16 Labs",
     type: "Internship",
-    role: "MERN stack Developer",
+    role: "Software Engineering Intern",
+    tenure: "Ongoing",
     worksDone: [
       {
         id: 11,
-        work: "Implementing core features of the product",
+        work: "Working on medical software",
       },
       {
         id: 12,
-        work: "Working on Nodejs backend APIs",
-      },
-      {
-        id: 13,
-        work: "Collaboration with teams",
+        work: "Working with React, APIs in Nodejs etc.",
       },
     ],
   },
   {
     id: 2,
-    name: "Freelancing",
-    type: "Freelancing",
-    role: "Web Developer",
+    name: "Vinnovate Technologies",
+    type: "Internship",
+    role: "Product Engineering Intern",
+    tenure: "1 month",
     worksDone: [
       {
         id: 21,
-        work: "Making websites with MERN stack",
+        work: "Implementing core features of the product",
       },
       {
         id: 22,
-        work: "Deployment to Heroku, Netlify, AWS etc.",
-      },
-      {
-        id: 23,
-        work: "Managing the client's increasing needs",
+        work: "Working with APIs in Nodejs",
       },
     ],
   },
-
   {
     id: 3,
-    name: "IEEE CS-JMI Student Chapter",
-    type: "College Society",
-    role: "Web Team",
+    name: "Freelancing",
+    type: "Freelancing",
+    role: "Web Developer",
+    tenure: "5 months",
     worksDone: [
       {
         id: 31,
-        work: "Designing and making their website",
+        work: "Making websites with MERN stack",
       },
       {
         id: 32,
-        work: "Managing other members in the team",
-      },
-      {
-        id: 33,
-        work: "collaboration with other teams",
+        work: "Deployment to Heroku, Netlify, AWS etc.",
       },
     ],
   },
 
   {
     id: 4,
-    name: "The Jamia Review",
+    name: "IEEE CS-JMI Student Chapter",
     type: "College Society",
     role: "Web Team",
+    tenure: "3 months",
     worksDone: [
       {
         id: 41,
-        work: 'Prototyping and making "admissions" website',
+        work: "Designing and making their website",
       },
       {
         id: 42,
-        work: "Managing the web team, tasks and supervision",
+        work: "Managing other members in the team",
+      },
+    ],
+  },
+
+  {
+    id: 5,
+    name: "The Jamia Review",
+    type: "College Society",
+    role: "Web Team",
+    tenure: "5 months",
+    worksDone: [
+      {
+        id: 51,
+        work: 'Prototyping and making "admissions" website',
       },
       {
-        id: 43,
-        work: "Collaboration with other teams",
+        id: 52,
+        work: "Managing web team, tasks, supervision and collaboration",
       },
     ],
   },

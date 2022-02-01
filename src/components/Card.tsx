@@ -1,13 +1,6 @@
 import { ProjectType } from "./projectWorks";
 
-const Card = ({
-  id,
-  title,
-  imgsrc,
-  description,
-  github,
-  deploy,
-}: ProjectType) => {
+const Card = ({ title, imgsrc, description, github, deploy }: ProjectType) => {
   return (
     <div>
       <div className="card">
