@@ -14,7 +14,7 @@ const projects = [
     imgsrc: "/images/social.png",
     description:
       "Social Media app (with almost all features, built on nodejs, reactjs, redux etc",
-    // github: "https://github.com/m3rashid/social",
+    github: "https://github.com/m3rashid/social",
   },
 
   {
