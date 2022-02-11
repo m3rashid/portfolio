@@ -10,24 +10,15 @@ export type ProjectType = {
 const projects = [
   {
     id: 1,
-    title: "Social-Client",
+    title: "Social",
     imgsrc: "/images/social.png",
     description:
-      "Social Media Web-Client (with almost all features, built on typescript with react and redux)",
-    github: "https://github.com/m3rashid/social-web-client",
+      "Social Media app (with almost all features, built on nodejs, reactjs, redux etc",
+    // github: "https://github.com/m3rashid/social",
   },
 
   {
     id: 2,
-    title: "Social-Server",
-    imgsrc: "/images/social.png",
-    description:
-      "Social Media Server (built on typescript with nodejs, express, mongodb and aws-sdk)",
-    github: "https://github.com/m3rashid/social-server",
-  },
-
-  {
-    id: 3,
     title: "ZUNI",
     imgsrc: "/images/zuni.jpeg",
     description:
@@ -37,7 +28,7 @@ const projects = [
   },
 
   {
-    id: 4,
+    id: 3,
     title: "Taxtds",
     imgsrc: "/images/taxtds.jpeg",
     description:
@@ -46,7 +37,7 @@ const projects = [
   },
 
   {
-    id: 5,
+    id: 4,
     title: "Cubicle",
     imgsrc: "/images/cubicle.jpg",
     description:
@@ -56,7 +47,7 @@ const projects = [
   },
 
   {
-    id: 6,
+    id: 5,
     title: "CovidMe",
     imgsrc: "/images/covid.jpeg",
     description:
@@ -66,7 +57,7 @@ const projects = [
   },
 
   {
-    id: 7,
+    id: 6,
     title: "HackJMI ML",
     imgsrc: "/images/hack.jpeg",
     description:
@@ -75,7 +66,7 @@ const projects = [
   },
 
   {
-    id: 8,
+    id: 7,
     title: "Whatsapp Bot",
     imgsrc: "/images/whatsapp.jpeg",
     description:
@@ -84,7 +75,7 @@ const projects = [
   },
 
   {
-    id: 9,
+    id: 8,
     title: "Old Portfolio",
     imgsrc: "/images/old.jpg",
     description:
@@ -94,7 +85,7 @@ const projects = [
   },
 
   {
-    id: 10,
+    id: 9,
     title: "Mini Projects",
     imgsrc: "/images/mini.jpeg",
     description:
