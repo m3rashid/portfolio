@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunknew_portfolio=self.webpackChunknew_portfolio||[]).push([[53],{53:function(e,l,t){t.r(l);var f=t(184);l.default=function(){return(0,f.jsxs)("svg",{role:"img",height:"40",width:"40",viewBox:"0 0 24 24",xmlns:"http://www.w3.org/2000/svg",children:[(0,f.jsx)("title",{children:"Vercel"}),(0,f.jsx)("g",{fill:"#ffffff",children:(0,f.jsx)("path",{d:"M24 22.525H0l12-21.05 12 21.05z"})})]})}}}]);
+//# sourceMappingURL=53.aba23bea.chunk.js.map
