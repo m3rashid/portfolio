@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { HashRouter, Routes, Route, Navigate } from "react-router-dom";
 import Main from "./Main";
 import Header from "./Header";
 import Footer from "./Footer";
@@ -15,7 +15,7 @@ appHeight();
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <HashRouter>
         <Header />
         <Routes>
           <Route path="/about" element={<About />} />
@@ -24,7 +24,7 @@ function App() {
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
         <Footer />
-      </BrowserRouter>
+      </HashRouter>
     </>
   );
 }

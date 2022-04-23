@@ -14,7 +14,7 @@ const Works: FC = () => {
                 key={entry.id}
                 title={entry.title}
                 description={entry.description}
-                imgsrc={entry.imgsrc}
+                imgsrc={process.env.PUBLIC_URL + entry.imgsrc}
                 github={entry.github ? entry.github : ""}
                 deploy={entry.deploy ? entry.deploy : ""}
               />

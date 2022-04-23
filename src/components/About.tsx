@@ -9,7 +9,7 @@ const About: FC = () => {
     <main id="about">
       <div className="grid">
         <div className="left">
-          <img src="/images/author.jpeg" alt="" />
+          <img src={process.env.PUBLIC_URL + "/images/author.jpeg"} alt="" />
           <h1>
             Hey 👋 <span className="h1">Rashid</span> Here
           </h1>
