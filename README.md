@@ -1,3 +1,1 @@
-Personal portfolio website
-
-Live at [m3rashid.netlify.app](https://m3rashid.netlify.app)
+### Personal portfolio website
